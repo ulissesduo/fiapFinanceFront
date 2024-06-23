@@ -12,11 +12,10 @@
 
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    
 </head>
-
-<body>
-
-   
+<body>   
     <nav class="p-3 mb-2 bg-secondary text-white rounded-bottom-4 d-md-none">
         <h3 class="d-flex justify-content-center">Nova despesa</h3>
         <div class="d-flex justify-content-between">
@@ -24,81 +23,79 @@
             <p>R$ 3.200,00</p>
         </div>
         <p class="text-success">Resgatar</p>
-
     </nav>
-
-    <div class="container mt-4">
-        <div class="">
-            <h4 class="fs-2">Valor da despesa</h4>
-            <div class="d-flex justify-content-between">
-                <p class="fs-1 fw-bold">Valor da despesa.</p>
-                <span class="material-symbols-outlined d-md-none">
-                    visibility
-                </span>
-            </div>
-        </div>
-        <div class="">
-            <h4 class="fs-2">Descrição</h4>
-            <div class="d-flex">
-                <span class="material-symbols-outlined">
-                    edit
-                </span>
-                <p>Valor da despesa.</p>
-            </div>
-
-        </div>
-        <div class="">
-            <h4 class="fs-2">Categoria</h4>
-            <div class="d-flex justify-content-between align-items-center">
-                <div class="d-flex justify-content-between align-items-center">
-                    <i class="fa fa-list fa-1x "
-                        style="width:30px; display:flex; justify-content:center; align-items:center"></i>
-                    <p>Valor da despesa.</p>
-                </div>
-
-            </div>
-        </div>
-        <div class="">
-            <h4 class="fs-2">Despesa fixa</h4>
-            <div class="d-flex justify-content-between">
-                <div class="d-flex">
-                    <span class="material-symbols-outlined">
-                        payments
+    <form>
+       
+        <div class="container mt-4">
+            <div class="">
+                <h4 class="fs-2">Valor da despesa</h4>
+                <div class="d-flex justify-content-between h4 pb-2 mb-4  border-bottom">
+                    <input type="text" class="form-control fs-1 fw-bold border-0 shadow-none" >
+                    <span class="material-symbols-outlined d-md-none">
+                        visibility
                     </span>
-                    <p>Valor da despesa.</p>
-                </div>
-
-            </div>
-        </div>
-        <div class="">
-            <h4 class="fs-2">Data</h4>
-            <div class="d-flex justify-content-between align-items-center">
-                <div class="d-flex justify-content-between align-items-center">
-                    <i class="fa fa-calendar"></i>
-                    <p>Valor da despesa.</p>
                 </div>
             </div>
-        </div>
-
-        <div class="">
-            <h4 class="fs-2">Parcelamento</h4>
-            <div class="d-flex justify-content-between">
-                <p>Valor da despesa.</p>
-
-            </div>
-        </div>
-        <div class="">
-            <h4 class="fs-2">Anexos</h4>
-            <div class="d-flex justify-content-between align-items-center">
-                <div class="d-flex justify-content-between align-items-center">
+            <div class="">
+                <h4 class="fs-2">Descrição</h4>
+                <div class="d-flex  h4 pb-2 mb-4 text-secondary border-bottom">
                     <span class="material-symbols-outlined">
-                        attach_file
+                        edit
                     </span>
-                    <p>Valor da despesa.</p>
+                    <input type="text" class="form-control border-0 shadow-none" >
+                </div>
+            </div>
+            <div class="">
+                <h4 class="fs-2">Categoria</h4>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex justify-content-between align-items-center h4 pb-2 mb-4 text-secondary border-bottom">
+                        <i class="fa fa-list fa-1x" style="width:30px; display:flex; justify-content:center; align-items:center"></i>
+                        <input type="text" class="form-control  border-0 shadow-none"  >
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <h4 class="fs-2">Despesa fixa</h4>
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex h4 pb-2 mb-4 text-secondary border-bottom">
+                        <span class="material-symbols-outlined">
+                            payments
+                        </span>
+                        <input type="text" class="form-control  border-0 shadow-none"  >
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <h4 class="fs-2">Data</h4>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex justify-content-between align-items-center h4 pb-2 mb-4 text-secondary border-bottom">
+                        <i class="fa fa-calendar"></i>
+                        <input type="date" class="form-control  border-0 shadow-none" >
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <h4 class="fs-2">Parcelamento</h4>
+                <div class="d-flex justify-content-between h4 pb-2 mb-4 text-secondary border-bottom ">
+                    <input type="text" class="form-control border-0 shadow-none">
+                </div>
+            </div>
+            <div class="">
+                <h4 class="fs-2">Anexos</h4>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="material-symbols-outlined">
+                            attach_file
+                        </span>
+                        <input type="file" class="form-control" >
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+
+
+    </form>
+    
 
     <nav class="navbar fixed-bottom navbar-expand-sm bg-dark navbar-dark d-md-none justify-content-around ">
         <i class="fa fa-line-chart fa-2x"></i>
