@@ -22,13 +22,20 @@ document.addEventListener('DOMContentLoaded', function() {
         var confirmation = confirm("Are you sure that want to submit this form?");
         return confirmation;
     }
-
-    function clearFields() {
+   
+    function clearFields() {       
         document.getElementById('newExpense').value = '';
-        document.getElementById('description').value = '';
-        document.getElementById('category').selectedIndex = 0;
+        document.getElementById('description').value = '';       
         document.getElementById('expenses').value = '';
         document.getElementById('dateinput').value = '';
         document.getElementById('parcelamento').value = '';
+        document.getElementById("files").value = null;
+        var categoria = document.getElementById('category');
+
+        for(var i = 0; i < categoria.length; i++){
+            if(categoria.options[i].selected){
+                categoria.options[i].selected = false;
+            }
+        };
     }
 });
